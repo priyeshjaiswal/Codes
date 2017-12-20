@@ -1,0 +1,270 @@
+<?php 
+include 'sidebar.php';
+
+?>
+ <!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
+    <head>
+	
+	<style>
+	.button1 {
+    background-color:#5c90d2;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+	border-radius: 50%;
+}
+	.button2 {
+    background-color:#a9a9a9;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+	border-radius: 50%;
+}
+
+	</style>
+        <meta charset="utf-8">
+
+        <title>Sarkari Pariksha - Dashboard</title>
+
+        <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
+        
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available Classes:
+
+            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+            'sidebar-l'                  Left Sidebar and right Side Overlay
+            'sidebar-r'                  Right Sidebar and left Side Overlay
+            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+            'sidebar-o'                  Visible Sidebar by default (> 991px)
+            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+            'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+            'header-navbar-fixed'        Enables fixed header
+        -->
+        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+           
+
+
+          <!-- Header -->
+            <header id="header-navbar" class="content-mini content-mini-full">
+               
+
+                <!-- Header Navigation Left -->
+                <ul class="nav-header pull-left">
+                    <li class="hidden-md hidden-lg">
+                        <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                        <button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+                        <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                        <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <!-- Opens the Apps modal found at the bottom of the page, before including JS code -->
+                        <button class="btn btn-default pull-right" data-toggle="modal" data-target="#apps-modal" type="button">
+                            <i class="si si-grid"></i>
+                        </button>
+                    </li>
+                    <li class="visible-xs">
+                        <!-- Toggle class helper (for .js-header-search below), functionality initialized in App() -> uiToggleClass() -->
+                        <button class="btn btn-default" data-toggle="class-toggle" data-target=".js-header-search" data-class="header-search-xs-visible" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </li>
+                    <li class="js-header-search header-search">
+                        <form class="form-horizontal" action="base_pages_search.html" method="post">
+                            <div class="form-material form-material-primary input-group remove-margin-t remove-margin-b">
+                                <input class="form-control" type="text" id="base-material-text" name="base-material-text" placeholder="Search..">
+                                <span class="input-group-addon"><i class="si si-magnifier"></i></span>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <!-- END Header Navigation Left -->
+            </header>
+            <!-- END Header -->
+<script>
+
+</script>
+	
+			
+			
+			
+            <!-- Main Container -->
+            <main id="main-container">
+			 <div class="content content-narrow">
+		
+                    <!-- Forms Row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Bootstrap Forms Validation -->
+                            <h2 class="content-heading"> Profile</h2>
+						
+                            <div class="block">
+                                <div class="block-header">
+							
+                                <div class="block-content block-content-narrow"style="margin-top:50;">
+                                    <!-- jQuery Validation (.js-validation-bootstrap class is initialized in js/pages/base_forms_validation.js) -->
+                                    <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
+									
+									<form method="post">
+									<div id="maindivv">
+									
+									<div class="form-group" id="form_1">
+											
+                                            <label class="col-md-2 control-label" for="val-password"><b> Date </b><span class="text-danger">*</span></label>
+											
+                                            <div class="col-md-5">
+                                                <b> From </b> &nbsp;&nbsp; 
+												<input type="radio" id="1" name="form_1" value = "1" onclick="DateFuction(id)"> </br>
+												<input class="form-control input_field_1_1" type="text" name="formdate[]" id="date1" placeholder="" disabled>
+												</div>
+												
+												<div class="col-md-5">
+                                                <b> to </b> &nbsp;&nbsp; 
+												<input type="radio" id="1" name="form_1" value="2" onclick="DateFuction(id)"> </br>
+												<input class="form-control input_field_1_2" type="text" name="todate[]" id="date2" placeholder="" disabled>
+												</div>
+												
+                                        </div>
+										
+										</div>
+										</div>
+											</br></br>
+										<div class="form-group">
+										 <div class="col-md-11"></div>
+										  <div class="col-md-1">
+										<button type="button" class="button1" id="but" value="2" onclick="AddForm(); addvalue();">+</button>
+										</div>
+										</div>
+										</form>
+								</div>
+                            </div>									
+                            <!-- Bootstrap Forms Validation -->
+                        </div>
+	
+                       
+                        </div>
+                    </div>
+                    <!-- END Forms Row -->
+
+                    
+                </div>
+                <!-- END Page Content -->
+                <!-- Page Content -->
+               
+                    
+                <!-- END Page Content -->
+            </main> </br>
+            <!-- END Main Container -->
+
+			
+			
+<script>
+
+function DateFuction(id){
+var radio=document.querySelectorAll("input[name=form_"+id+"]:checked")[0].value;
+  
+if(radio==1) {	
+document.querySelector(".input_field_"+id+"_1").disabled=false;
+document.querySelector(".input_field_"+id+"_2").disabled=true;
+}
+if(radio==2) {
+document.querySelector(".input_field_"+id+"_1").disabled=false;
+document.querySelector(".input_field_"+id+"_2").disabled=false;
+
+}}
+
+
+function AddForm(id){
+var z=document.getElementById("but").value;
+
+var creatediv=document.createElement('div');
+creatediv.id="form_"+z;
+
+var divs=document.getElementById("maindivv");
+divs.append(creatediv);
+
+var form='<div class="form-group"><label class="col-md-2 control-label" for="val-password"><b> Date </b><span class="text-danger">*</span></label><div class="col-md-5"><b> From </b> &nbsp;&nbsp;<input type="radio" id="'+z+'" name="form_'+z+'" value = "1" onclick="DateFuction(id)"></br><input class="form-control input_field_'+z+'_1" type="text" name="formdate[]" id="date1" placeholder="" disabled></div><div class="col-md-5"><b> to </b> &nbsp;&nbsp;<input type="radio" id="'+z+'" name="form_'+z+'" value="2" onclick="DateFuction(id)"> </br><input class="form-control input_field_'+z+'_2" type="text" name="todate[]" id="date2" placeholder="" disabled></div></div><div class="col-md-11"></div><div class="col-md-1"><button class="button2" value="'+z+'"onclick="Subtractform(value);"><b>-</b></button></div>';
+
+creatediv.innerHTML=form;	
+}
+
+var but_val=document.getElementById("but").value;
+function addvalue(){
+but_val++;
+document.getElementById('but').value = but_val;	
+}
+
+
+function Subtractform(value){
+var del=document.getElementById("form_"+value).innerHTML=null;
+var divs=document.getElementById("maindivv");	
+var a=document.getElementById("form_"+value);
+divs.removeChild(a);
+}
+</script>		
